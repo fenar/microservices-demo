@@ -62,12 +62,17 @@ metadata:
     app: checkoutservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: checkoutservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: checkoutservice
+        version: v1
     spec:
       serviceAccountName: default
       containers:
@@ -126,12 +131,17 @@ metadata:
     app: recommendationservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: recommendationservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: recommendationservice
+        version: v1
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -181,10 +191,15 @@ metadata:
     app: frontend
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: frontend
+      version: v1
   template:
     metadata:
       labels:
         app: frontend
+        version: v1
       annotations:
         sidecar.istio.io/inject: "true"
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
@@ -271,12 +286,17 @@ metadata:
     app: paymentservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: paymentservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: paymentservice
+        version: v1
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -323,12 +343,17 @@ metadata:
     app: productcatalogservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: productcatalogservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: productcatalogservice
+        version: v1
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -376,12 +401,17 @@ metadata:
     app: cartservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: cartservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: cartservice
+        version: v1
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -453,12 +483,17 @@ metadata:
     app: currencyservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: currencyservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: currencyservice
+        version: v1
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -505,12 +540,17 @@ metadata:
     app: shippingservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: shippingservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: shippingservice
+        version: v1
     spec:
       serviceAccountName: default
       containers:
@@ -558,12 +598,17 @@ metadata:
     app: redis-cart
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: redis-cart
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: redis-cart
+        version: v1
     spec:
       containers:
       - name: redis
@@ -606,12 +651,17 @@ metadata:
     app: adservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: adservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: adservice
+        version: v1
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
