@@ -6,10 +6,6 @@ metadata:
     app: emailservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: emailservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -61,10 +57,6 @@ metadata:
     app: checkoutservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: checkoutservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -129,10 +121,6 @@ metadata:
     app: recommendationservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: recommendationservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -188,10 +176,6 @@ metadata:
     app: frontend
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: frontend
-      version: v1
   template:
     metadata:
       labels:
@@ -282,10 +266,6 @@ metadata:
     app: paymentservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: paymentservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -338,10 +318,6 @@ metadata:
     app: productcatalogservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: productcatalogservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -395,10 +371,6 @@ metadata:
     app: cartservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: cartservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -476,10 +448,6 @@ metadata:
     app: currencyservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: currencyservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -532,10 +500,6 @@ metadata:
     app: shippingservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: shippingservice
-      version: v1
   template:
     metadata:
       annotations:
@@ -589,10 +553,6 @@ metadata:
     app: redis-cart
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: redis-cart
-      version: v1
   template:
     metadata:
       annotations:
@@ -641,10 +601,6 @@ metadata:
     app: adservice
     version: v1
 spec:
-  selector:
-    matchLabels:
-      app: adservice
-      version: v1
   template:
     metadata:
       annotations:
