@@ -6,12 +6,17 @@ metadata:
     app: emailservice
     version: v1
 spec:
+  selector:
+    matchLabels:
+      app: emailservice
+      version: v1
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: emailservice
+        version: v1
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
