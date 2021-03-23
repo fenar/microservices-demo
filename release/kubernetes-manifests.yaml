@@ -15,7 +15,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: emailservice-v1
+  name: emailservice
 spec:
   template:
     metadata:
@@ -23,7 +23,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: emailservice
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       containers:
@@ -77,7 +76,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: checkoutservice-v1
+  name: checkoutservice
 spec:
   template:
     metadata:
@@ -85,7 +84,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: checkoutservice
-        version: v1
     spec:
       containers:
         - name: server
@@ -151,7 +149,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: recommendationservice-v1
+  name: recommendationservice
 spec:
   template:
     metadata:
@@ -159,7 +157,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: recommendationservice
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       containers:
@@ -216,7 +213,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: frontend-v1
+  name: frontend
 spec:
   template:
     metadata:
@@ -224,7 +221,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: frontend
-        version: v1
     spec:
       containers:
         - name: server
@@ -315,7 +311,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: paymentservice-v1
+  name: paymentservice
 spec:
   template:
     metadata:
@@ -323,7 +319,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: paymentservice
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       containers:
@@ -375,7 +370,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: productcatalogservice-v1
+  name: productcatalogservice
 spec:
   template:
     metadata:
@@ -383,7 +378,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: productcatalogservice
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       containers:
@@ -438,7 +432,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: cartservice-v1
+  name: cartservice
 spec:
   template:
     metadata:
@@ -446,7 +440,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: cartservice
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       containers:
@@ -508,7 +501,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: loadgenerator-v1
+  name: loadgenerator
 spec:
   replicas: 1
   template:
@@ -517,7 +510,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: loadgenerator
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
@@ -565,7 +557,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: currencyservice-v1
+  name: currencyservice
 spec:
   template:
     metadata:
@@ -573,7 +565,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: currencyservice
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       containers:
@@ -626,7 +617,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: shippingservice-v1
+  name: shippingservice
 spec:
   template:
     metadata:
@@ -634,7 +625,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: shippingservice
-        version: v1
     spec:
       containers:
       - name: server
@@ -689,7 +679,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: redis-cart-v1
+  name: redis-cart
 spec:
   template:
     metadata:
@@ -697,7 +687,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: redis-cart
-        version: v1
     spec:
       containers:
       - name: redis
@@ -756,7 +745,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: adservice-v1
+  name: adservice
 spec:
   template:
     metadata:
@@ -764,7 +753,6 @@ spec:
         sidecar.istio.io/inject: "true"
       labels:
         app: adservice
-        version: v1
     spec:
       terminationGracePeriodSeconds: 5
       containers:
